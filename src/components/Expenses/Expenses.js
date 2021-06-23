@@ -13,7 +13,7 @@ const filterChangeHandler = selectedYear => {
 };
   return (
     <Card className="expenses">
-      <ExpenseFilter selected={filteredYear} onChange={filterChangeHandler} />
+      <ExpenseFilter selected={filteredYear} onChangeFilter={filterChangeHandler} />
       <ExpenseItem
         title={items[0].title}
         amount={items[0].amount}
