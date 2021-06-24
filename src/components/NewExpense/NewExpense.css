@@ -36,3 +36,12 @@
 .new-expense button.alternative:active {
     background-color: #ddb3f8;
 }
+
+.new-expense__btn {
+    display: none;
+}
+
+.new-expense__btn.active {
+    display: block;
+    margin: auto;
+}

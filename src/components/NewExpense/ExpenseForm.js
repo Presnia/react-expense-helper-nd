@@ -51,8 +51,12 @@ const ExpenseForm = (props) => {
     setEnteredDate('');
   };
 
+  const handleOnClick = () => {
+    props.setActive(true);
+  }
+
   return (
-    <form onSubmit={submitHandler}>
+    <form className={`${"form"} ${props.isActive ? "inactive" : ""}`} onSubmit={submitHandler}>
       <div className="new-expense__controls">
         <div className="new-expense__control">
           <label>Title</label>
@@ -79,7 +83,11 @@ const ExpenseForm = (props) => {
         </div>
       </div>
       <div className="new-expense__actions">
-        <button className="cancel-btn">Cancel</button>
+        <button className="cancel-btn"
+                onClick={handleOnClick}
+        >
+          Cancel
+        </button>
         <button type="submit">Add Expense</button>
       </div>
     </form>

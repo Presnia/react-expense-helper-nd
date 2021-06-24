@@ -1,3 +1,11 @@
+.form.inactive {
+  display: none;
+}
+
+.form {
+    display: block;
+}
+
 .new-expense__controls {
     display: flex;
     flex-wrap: wrap;
