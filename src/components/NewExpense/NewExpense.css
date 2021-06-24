@@ -45,3 +45,7 @@
     display: block;
     margin: auto;
 }
+
+.new-expense__btn:active {
+    transform: scale(0.98);
+}
